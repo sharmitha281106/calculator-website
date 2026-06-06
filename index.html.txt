@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flowing Display Calculator</title>
+<!-- Link to external CSS -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="flower-bg">
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+</div>
+
+<div class="calculator">
+<!-- Animated Display Screen -->
+<div class="display-screen" id="display">0</div>
+
+<div class="buttons-grid">
+<!-- SCIENTIFIC ROW 1 -->
+<button class="sci-btn" onclick="appendFunction('sin(')">sin</button>
+<button class="sci-btn" onclick="appendFunction('cos(')">cos</button>
+<button class="sci-btn" onclick="appendFunction('tan(')">tan</button>
+<button class="sci-btn" onclick="appendFunction('log(')">log</button>
+<button class="sci-btn" onclick="appendFunction('ln(')">ln</button>
+
+<!-- SCIENTIFIC ROW 2 -->
+<button class="sci-btn" onclick="appendFunction('(')">(</button>
+<button class="sci-btn" onclick="appendFunction(')')">)</button>
+<button class="sci-btn" onclick="appendFunction('^')">^</button>
+<button class="sci-btn" onclick="appendFunction('sqrt(')">√</button>
+<button class="sci-btn" onclick="appendNumber('π')">π</button>
+
+<!-- STANDARD ROWS -->
+<button class="clear-btn" onclick="clearDisplay()">AC</button>
+<button class="clear-btn" onclick="deleteNumber()">DEL</button>
+<button class="op-btn" onclick="chooseOperation('/')">÷</button>
+<button class="op-btn" onclick="chooseOperation('*')">×</button>
+
+<button class="num-btn" onclick="appendNumber('7')">7</button>
+<button class="num-btn" onclick="appendNumber('8')">8</button>
+<button class="num-btn" onclick="appendNumber('9')">9</button>
+<button class="op-btn" onclick="chooseOperation('-')">-</button>
+
+<button class="num-btn" onclick="appendNumber('4')">4</button>
+<button class="num-btn" onclick="appendNumber('5')">5</button>
+<button class="num-btn" onclick="appendNumber('6')">6</button>
+<button class="op-btn" onclick="chooseOperation('+')">+</button>
+
+<button class="num-btn" onclick="appendNumber('1')">1</button>
+<button class="num-btn" onclick="appendNumber('2')">2</button>
+<button class="num-btn" onclick="appendNumber('3')">3</button>
+
+<button class="equal-btn" onclick="compute()">=</button>
+
+<button class="span-two num-btn" onclick="appendNumber('0')">0</button>
+<button class="num-btn" onclick="appendNumber('.')">.</button>
+</div>
+</div>
+
+<!-- Link to external JS -->
+<script src="script.js"></script>
+</body>
+</html>
